@@ -21,7 +21,7 @@ run the code with
 <h3>Version history</h3>
 <h4>v0.1</h4> At this stage I've wired up Angular and show it works via the two-way binding for the element 'test'.  (Note: Unlike Michael's tutorial, the two-way binding did not work until I included the angular js script in `<head>` instead of in `<body>`.)
 
-<h3>Michal's YouTube Tutorial</h3>
+<h3>Michael's YouTube Tutorial</h3>
 
 Here is the 5-part YouTube tutorial for this MEAN stack app:
 
