@@ -6,7 +6,7 @@ links to which are available below.
 
 Clone this repo:
 
-    git clone  git@github.com:kglidden/MEAN_stack_tutorial.git
+    git clone  git@github.com:kenglidden/MEAN_stack_tutorial.git
 
 
 cd to the root directory and install Express:
