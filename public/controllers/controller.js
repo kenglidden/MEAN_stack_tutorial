@@ -2,24 +2,15 @@ var myApp = angular.module('myApp', []);
 myApp.controller('AppCtrl', ['$scope', '$http', function($scope, $http) {
     console.log("Hello World from controller");
 
-    person1 = {
-      name: 'Tim',
-      email: 'tim@email1.com',
-      number: '111 111 1111'
-    };
+$http.get('/contactlist').then(successCallback, errorCallback);
 
-    person2 = {
-      name: 'Emily',
-      email: 'Emily@email1.com',
-      number: '222 111 1111'
-    };
+function successCallback(response){
+ console.log("I got the data I requested");
+ $scope.contactlist = response.data;
+}
 
-    person3 = {
-      name: 'John',
-      email: 'john@email1.com',
-      number: '(333) 333-3333'
-    };
+function errorCallback(error){
+    //error code
+}
 
-    var contactlist = [person1, person2, person3];
-    $scope.contactlist = contactlist;
 }]);
